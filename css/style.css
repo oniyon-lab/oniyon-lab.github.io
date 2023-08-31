@@ -72,7 +72,16 @@ The content `<div>` is where all your content goes.
     color: #888;
 }
 
-
+.footer {
+    border-top: 1px solid #eee;
+    font-size: 87.5%;
+    margin-top: 3.4286em;
+    padding: 1.1429em;
+}
+.legal-copyright {
+    margin: 0;
+    text-align: right;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
