@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    $(()=>{
+        common.loadModules();
+        $("head").append(`<meta name="description" content="oniYon lab 技術 memo site - memoページ">`);
+        $("head").append(`<title>oniYon 技術ブログ - memo</title>`);
+        $('#content').html( $('#mainContentTemplate').html() );
+    });
+</script>
+<template id="mainContentTemplate">
+    <h2 class="content-subhead">Memo</h2>
+    <p>
+        日頃の技術メモを書き留めます
+    </p>
+    
+    <h2 class="content-subhead">phpメモ</h2>
+    <p>
+        phpのメモ
+    </p>
+    
+    <div class="pure-g">
+        <div class="pure-u-1-4">
+            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+        </div>
+        <div class="pure-u-1-4">
+            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+        </div>
+        <div class="pure-u-1-4">
+            <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+        </div>
+        <div class="pure-u-1-4">
+            <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+        </div>
+    </div>
+</template>
+</body>
+</html>
