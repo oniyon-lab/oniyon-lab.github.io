@@ -1,5 +1,5 @@
 const common = {
-  version: '0.0.3'
+  version: '0.0.4'
   , loadModules: () => {
     $('body').prepend( utils.getContents(`/module/layout.html?ver=${common.version}`) );
     $('head').append( utils.getContents(`/module/head-common.html?ver=${common.version}`) );
