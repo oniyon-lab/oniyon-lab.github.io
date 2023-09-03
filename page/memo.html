@@ -32,9 +32,25 @@
         コマンドラインからの起動: PHPのビルトインウェブサーバは、コマンドラインから簡単に起動できます。以下のコマンドを使用します。
     </p>
     <pre>
-        php -S localhost:8000
+<code>php -S localhost:8000</code>
     </pre>
-    
+    <p>
+        バックグラウンドで実行
+    </p>
+    <pre>
+<code>php -S localhost:8000 >/dev/null 2>&1 &</code>
+    </pre>
+    <p>
+        jobsで確認してfg後ctrl+cで閉じる
+    </p>
+    <pre>
+<code>$ jobs
+[1]+  Running                 php -S localhost:8000 > /dev/null 2>&1 &
+$ fg #1
+php -S localhost:8000 > /dev/null 2>&1
+^C</code>
+    </pre>
+
     <div class="pure-g">
         <div class="pure-u-1-4">
             <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">

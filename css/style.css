@@ -92,6 +92,16 @@ The content `<div>` is where all your content goes.
         height: 100%;
     }
 
+pre code {
+    display: block;
+    overflow-x: auto;
+    padding: 1.0em;
+    background: #272822;
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.2em;
+}
+
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
